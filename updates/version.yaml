@@ -6,3 +6,4 @@
  - Created Project Infos table
  - create_project_infos_table.php
 1.0.4: Added configuation page
+1.0.5: Fixed the redirect on feature delete

@@ -12,7 +12,7 @@ form: $/andocobo/projectfeatures/models/features/fields.yaml
 modelClass: andocobo\ProjectFeatures\Models\Feature
 
 # Default redirect location
-defaultRedirect: rainlab/blog/features
+defaultRedirect: andocobo/projectfeatures/featurescontroller
 
 # Create page
 create:
@@ -27,6 +27,7 @@ update:
     redirect: andocobo/projectfeatures/featurescontroller
     redirectClose: andocobo/projectfeatures/featurescontroller
     flashSave: Project feature has been edited!
+    flashDelete: Project feature has been deleted!
 
 # Preview page
 preview:
