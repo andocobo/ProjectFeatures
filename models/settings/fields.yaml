@@ -1,0 +1,9 @@
+fields:
+    blog_category:
+        label: Blog category
+        commentAbove: The blog category to use as the source for the web showcase projects
+
+    number_posts:
+        label: Number of posts
+        commentAbove: The number of projects to show on the webshowcase page
+    

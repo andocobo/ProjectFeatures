@@ -1,0 +1,54 @@
+{% set featureList = __SELF__.featureList %}
+
+{% for post in __SELF__.posts %}
+		<div class="feature gradient">
+			<div class="container big-padding">
+				<div class="row">
+					{% if loop.index is odd %}
+		    			<div data-sr="enter right, hustle 100px, no-reset" class="pull-right img-responsive col-sm-6">
+		    		{% else %}
+		    			<div data-sr="enter left, hustle 100px, no-reset" class="pull-left img-responsive col-sm-6">
+		    		{% endif %}
+			    		<img class="img-responsive showcaseImage" src="{{ post.featured_images.0.path }}">
+			    	</div>
+
+		    		{% if loop.index is odd %}
+		    			<div data-sr="enter left, hustle 100px, no-reset" class="pull-left col-sm-6">
+		    		{% else %}
+		    			<div data-sr="enter right, hustle 100px, no-reset" class="pull-right col-sm-6">
+		    		{% endif %}
+
+
+		    			<h2>{{ post.title }}</h2>
+		    			{% for key, info in __SELF__.projectInfo %}
+							{% if key == post.id %}
+		    					<p><i class="fa fa-external-link"></i><a href="http://{{ info.site_url }}" target="_blank">{{ info.site_name }}</a></p>
+		    				{% endif %}
+		    			{% endfor %}
+		    			<hr>
+		    			<div class="text-left">
+			    			
+			    			{{ post.content }}
+
+			    			<h4 class="medium-margin-top">Project features include...</h4>
+			    			<hr>
+			    			
+			    			<div class="row">
+								<ul class="featureChecklist">
+									
+									{% for key, features in __SELF__.featureList %}
+										{% if key == post.id %}
+											{% for feature in features %}
+												<li class="col-md-6"><i class="fa {{ feature.icon }}"></i>{{ feature.description }}</li>
+											{% endfor %}
+										{% endif %}
+									{% endfor %}
+								</ul>
+							</div>
+
+				    	</div>
+		    		</div>
+		    	</div>
+		    </div>
+		</div>
+	{% endfor %}

@@ -1,0 +1,13 @@
+# ===================================
+#  List Column Definitions
+# ===================================
+
+columns:
+
+    name:
+        label: Feature name
+        searchable: true
+
+    slug:
+        label: Feature slug
+        searchable: true

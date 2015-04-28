@@ -1,0 +1,33 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Features Controller
+
+# Model Form Field configuration
+form: $/andocobo/projectfeatures/models/features/fields.yaml
+
+# Model Class name
+modelClass: Andocobo\ProjectFeatures\Models\Feature
+
+# Default redirect location
+defaultRedirect: rainlab/blog/features
+
+# Create page
+create:
+    title: Create Project Feature
+    redirect: andocobo/projectfeatures/featurescontroller
+    redirectClose: andocobo/projectfeatures/featurescontroller
+    flashSave: New project feature has been created!
+
+# Update page
+update:
+    title: Edit Project Feature
+    redirect: andocobo/projectfeatures/featurescontroller
+    redirectClose: andocobo/projectfeatures/featurescontroller
+    flashSave: Project feature has been edited!
+
+# Preview page
+preview:
+    title: Preview Features Controller

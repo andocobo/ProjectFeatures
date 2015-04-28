@@ -1,0 +1,8 @@
+1.0.1: First version of ProjectFeatures
+1.0.2: 
+ - Created Features table and Features Posts table
+ - create_features_table.php
+1.0.3: 
+ - Created Project Infos table
+ - create_project_infos_table.php
+ 

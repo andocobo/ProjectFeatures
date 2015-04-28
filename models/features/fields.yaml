@@ -1,0 +1,27 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+  
+    name:
+        label: Feature name
+        description: The name of this new feature
+        required: true
+
+    slug:
+        label: Feature slug
+        description: Usually just the name with no spaces of weird characters
+        required: true
+
+    icon:
+        label: Feature icon class
+        description: The Font Awesome Icon class for this feature (visit the Font Awesome website for classs names)
+        required: true
+
+    description:
+        label: Feature description
+        description: The text that comes up on the actrual web page to describe this feature
+        type: textarea
+        size: small
+        required: true
