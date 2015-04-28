@@ -23,7 +23,7 @@ class Plugin extends PluginBase
         return [
             'name'        => 'Project Features',
             'description' => 'Add project features tab to blog admin page.',
-            'author'      => 'Andocobo',
+            'author'      => 'andocobo',
             'icon'        => 'icon-asterisk'
         ];
     }
