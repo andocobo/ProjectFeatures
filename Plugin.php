@@ -1,10 +1,10 @@
-<?php namespace Andocobo\ProjectFeatures;
+<?php namespace andocobo\ProjectFeatures;
 
 use System\Classes\PluginBase;
 use RainLab\Blog\Models\Post as PostModel;
 use RainLab\Blog\Controllers\Posts as PostsController;
-use Andocobo\ProjectFeatures\Models\Feature as FeatureModel;
-use Andocobo\ProjectFeatures\Models\ProjectInfo as ProjectInfoModel;
+use andocobo\ProjectFeatures\Models\Feature as FeatureModel;
+use andocobo\ProjectFeatures\Models\ProjectInfo as ProjectInfoModel;
 
 /**
  * ProjectFeatures Plugin Information File
@@ -31,14 +31,14 @@ class Plugin extends PluginBase
     public function registerComponents()
     {
         return [
-            'Andocobo\ProjectFeatures\Components\FeaturesComponent' => 'projectFeatures'
+            'andocobo\ProjectFeatures\Components\FeaturesComponent' => 'projectFeatures'
         ];
     }
 
     public function registerPageSnippets()
     {
         return [
-            'Andocobo\ProjectFeatures\Components\FeaturesComponent' => 'projectFeatures'
+            'andocobo\ProjectFeatures\Components\FeaturesComponent' => 'projectFeatures'
         ];
     }
 
@@ -57,7 +57,7 @@ class Plugin extends PluginBase
                 'description' => 'Manage the web showcase page',
                 'category'    => 'Project Features',
                 'icon'        => 'icon-asterisk',
-                'class'       => 'Andocobo\ProjectFeatures\Models\Settings',
+                'class'       => 'andocobo\ProjectFeatures\Models\Settings',
                 'order'       => 500,
                 'keywords'    => 'projects features blog'
             ]
@@ -71,8 +71,8 @@ class Plugin extends PluginBase
 
         PostModel::extend(function($model)
         {
-            $model->belongsToMany['features'] = ['Andocobo\ProjectFeatures\Models\Feature', 'table' => 'features_posts'];
-            $model->hasOne['projectInfo'] = ['Andocobo\ProjectFeatures\Models\ProjectInfo', 'table' => 'andocobo_projectfeatures_project_infos'];
+            $model->belongsToMany['features'] = ['andocobo\ProjectFeatures\Models\Feature', 'table' => 'features_posts'];
+            $model->hasOne['projectInfo'] = ['andocobo\ProjectFeatures\Models\ProjectInfo', 'table' => 'andocobo_projectfeatures_project_infos'];
         });
 
         PostsController::extendFormFields(function($form, $model, $context)

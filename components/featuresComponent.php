@@ -1,7 +1,7 @@
-<?php namespace Andocobo\ProjectFeatures\Components;
+<?php namespace andocobo\ProjectFeatures\Components;
 
-use Andocobo\ProjectFeatures\Models\Features;
-use Andocobo\ProjectFeatures\Models\Settings as Settings;
+use andocobo\ProjectFeatures\Models\Features;
+use andocobo\ProjectFeatures\Models\Settings as Settings;
 use RainLab\Blog\Models\Post;
 use RainLab\Blog\Models\Category;
 

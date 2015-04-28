@@ -1,4 +1,4 @@
-<?php namespace Andocobo\ProjectFeatures\Models;
+<?php namespace andocobo\ProjectFeatures\Models;
 
 use October\Rain\Database\Model;
 use System\Classes\SettingsManager;
@@ -33,6 +33,6 @@ class Settings extends Model
     {
         parent::__construct();
 
-        SettingsManager::setContext('Andocobo.ProjectFeatures', 'project-settings');
+        SettingsManager::setContext('andocobo.ProjectFeatures', 'project-settings');
     }
 }

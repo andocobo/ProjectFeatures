@@ -9,7 +9,7 @@ name: Features Controller
 form: $/andocobo/projectfeatures/models/features/fields.yaml
 
 # Model Class name
-modelClass: Andocobo\ProjectFeatures\Models\Feature
+modelClass: andocobo\ProjectFeatures\Models\Feature
 
 # Default redirect location
 defaultRedirect: rainlab/blog/features

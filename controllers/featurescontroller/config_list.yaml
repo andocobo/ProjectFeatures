@@ -6,7 +6,7 @@
 list: $/andocobo/projectfeatures/models/features/columns.yaml
 
 # Model Class name
-modelClass: Andocobo\ProjectFeatures\Models\Feature
+modelClass: andocobo\ProjectFeatures\Models\Feature
 
 # List Title
 title: Manage Features Controllers

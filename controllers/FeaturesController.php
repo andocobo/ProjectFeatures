@@ -1,4 +1,4 @@
-<?php namespace Andocobo\ProjectFeatures\Controllers;
+<?php namespace andocobo\ProjectFeatures\Controllers;
 
 use BackendMenu;
 use Backend\Classes\Controller;

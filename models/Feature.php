@@ -1,4 +1,4 @@
-<?php namespace Andocobo\ProjectFeatures\Models;
+<?php namespace andocobo\ProjectFeatures\Models;
 
 use Model;
 

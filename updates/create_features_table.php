@@ -1,4 +1,4 @@
-<?php namespace Andocobo\ProjectFeatures\Updates;
+<?php namespace andocobo\ProjectFeatures\Updates;
 
 use Schema;
 use October\Rain\Database\Updates\Migration;
