@@ -12,6 +12,8 @@ use andocobo\ProjectFeatures\Models\ProjectInfo as ProjectInfoModel;
 class Plugin extends PluginBase
 {
 
+    public $require = ['RainLab.Blog'];
+
     /**
      * Returns information about this plugin.
      *
